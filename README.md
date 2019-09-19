@@ -23,6 +23,12 @@ go mod download
 
 Verify using `go test` (running tests)
 
+### Optional: Linter package
+The file `.golangci.yml` is the settings file for [golangci-lint](https://github.com/golangci/golangci-lint).
+Follow the installation procedure from its homepage to install the linter package.
+
+Run the linter package then with `golangci-lint run ./...`
+
 ## License
 
 [![License][license-image]][license-url]
