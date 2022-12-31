@@ -2,18 +2,9 @@ package main_test
 
 import (
 	"testing"
-
-	"github.com/stretchr/testify/assert"
 )
 
 func TestSystemCanReportErrors(t *testing.T) {
-	result := 11
-
-	assert.Equal(t, 10, result)
-}
-
-func TestSystemWorks(t *testing.T) {
-	result := 11
-
-	assert.Equal(t, 11, result)
+	t.Error("Error logs the message and marks the test as failed, yet continues to execute")
+	t.Fatal("Fatal logs the message and marks the test as failed, and it immediately aborts the test")
 }
