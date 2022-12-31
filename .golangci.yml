@@ -1,12 +1,9 @@
 run:
   deadline: 5m
 
-linters:
-  enable-all: true
-
-  # linters are disabled if their majority of issues is considered false-positive (intended code)
-  # and the remaining issues (if existing) aren't worth it.
-  disable:
+# For long-running projects, it will be better to disable all linters, and then selectively enable those you want.
+# By default, a minimum of linters is enabled.
+# See https://golangci-lint.run/ for details.
 
 issues:
   exclude-use-default: false # disable filtering of defaults for better zero-issue policy
