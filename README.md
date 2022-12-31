@@ -1,22 +1,17 @@
 # CodingDojo template - Go
 
-This is a template for a coding dojo. The language is [Go](https://golang.org/)
-with [testify](https://github.com/stretchr/testify/) to help get started with testing.
-
-Note that `testify` is not necessary as Go comes with its own testing framework,
-it helps to get used when coming from other suite-based frameworks.
+This is a template for a coding dojo. The language is [Go](https://golang.org/).
 
 ## Installation
 
 ### Prerequisites
 
-* Go v1.12+
+* Go v1.19+
 
 ### Download
 ```
 git clone github.com/dertseha/codingdojo-go
 cd codingdojo-go
-go mod download
 ```
 
 ### Verification
@@ -24,7 +19,7 @@ go mod download
 Verify using `go test` (running tests)
 
 ### Optional: Linter package
-The file `.golangci.yml` is the settings file for [golangci-lint](https://github.com/golangci/golangci-lint).
+The file `.golangci.yml` is the settings file for [golangci-lint](https://golangci-lint.run/).
 Follow the installation procedure from its homepage to install the linter package.
 
 Run the linter package then with `golangci-lint run ./...`
